@@ -1,0 +1,56 @@
+/* F1EED9 */
+
+.table-small-view {
+    font-size: 12px !important;
+    text-align: center !important;
+    padding: 3px !important;
+}
+
+.strike-price {
+    font-weight: 700 !important;
+    color: #6984AD;
+}
+
+.table-in-the-price {
+    background-color: #FFF9f0 !important;
+}
+
+.table-first-view {
+    background-color: #83aaf0 !important;
+    color: white !important;
+}
+
+.table-second-view {
+    background-color: #ffa340 !important;
+    color: white !important;
+}
+
+.table-third-view {
+    background-color: #ff8083 !important;
+    color: white !important;
+}
+
+.table-forth-view {
+    background-color: #c9344d !important;
+    color: white !important;
+}
+
+.table-vol-first-view {
+    background-color: #decdd2 !important;
+    color: white !important;
+}
+
+.table-vol-second-view {
+    background-color: #e2b67f !important;
+    color: white !important;
+}
+
+.table-vol-third-view {
+    background-color: #ffb8ba !important;
+    color: white !important;
+}
+
+.table-vol-forth-view {
+    background-color: #b75e81 !important;
+    color: white !important;
+}
