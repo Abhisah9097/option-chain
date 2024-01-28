@@ -6,11 +6,16 @@ import {
 
 const initialState = {
   options: {
-    expiryDates: null, 
-    underlyingValue: null, 
-    strikePrices: null, 
-    timestamp: null, 
-    filtered: null
+    records: {
+      data: null,
+      expiryDates: null,
+      underlyingValue: null,
+      strikePrices: null,
+      timestamp: null
+    },
+    filtered: {
+      data: null,
+    }
   },
   error: null,
   loading: null
