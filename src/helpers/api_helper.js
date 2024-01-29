@@ -2,9 +2,9 @@ import axios from "axios";
 
 //apply base url for axios
 const REACT_APP_APP_URL = process.env.REACT_APP_APP_URL;
-
+console.log("REACT_APP_APP_URL: ", REACT_APP_APP_URL);
 const axiosApi = axios.create({
-  baseURL: REACT_APP_APP_URL,
+  baseURL: `http://13.201.35.252:8000`,
 });
 
 axios.interceptors.request.use(function (config) {
