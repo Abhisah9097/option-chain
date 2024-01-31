@@ -12,4 +12,9 @@ export const getPostDetails = (id) =>
     },
  });
 
-export const getOptions = () =>get(url.GET_OPTIONS)
+ export const getOptions = (payload) =>
+  get(url.GET_OPTIONS, {
+    params: {
+      ...payload
+    }
+ });

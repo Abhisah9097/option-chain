@@ -1,9 +1,9 @@
 /* F1EED9 */
 
 .table-small-view {
-    font-size: 12px !important;
+    font-size: 10px !important;
     text-align: center !important;
-    padding: 3px !important;
+    padding: 1px !important;
 }
 
 .strike-price {
@@ -15,42 +15,19 @@
     background-color: #FFF9f0 !important;
 }
 
-.table-first-view {
-    background-color: #83aaf0 !important;
+.first-of-largest-value {
+    background-color: #ff4c4c !important;
     color: white !important;
 }
-
-.table-second-view {
+.second-of-largest-value {
     background-color: #ffa340 !important;
     color: white !important;
 }
-
-.table-third-view {
-    background-color: #ff8083 !important;
+.third-of-largest-value {
+    background-color: #83aaf0 !important;
     color: white !important;
 }
-
-.table-forth-view {
-    background-color: #c9344d !important;
-    color: white !important;
-}
-
-.table-vol-first-view {
-    background-color: #decdd2 !important;
-    color: white !important;
-}
-
-.table-vol-second-view {
-    background-color: #e2b67f !important;
-    color: white !important;
-}
-
-.table-vol-third-view {
-    background-color: #ffb8ba !important;
-    color: white !important;
-}
-
-.table-vol-forth-view {
-    background-color: #b75e81 !important;
+.fourth-of-largest-value {
+    background-color: #a7c44c !important;
     color: white !important;
 }

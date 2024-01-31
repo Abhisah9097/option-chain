@@ -6,9 +6,10 @@ import { getOptionsFail, getOptionsSuccess } from "./actions";
 
 import { getOptions } from "../../helpers/backend_helper";
 
-function* onGetOptions() {
+function* onGetOptions({payload}) {
+  console.log(payload);
   try {
-    const response = yield call(getOptions);
+    const response = yield call(() => getOptions(payload));
     yield put(getOptionsSuccess(response));
   } catch (error) {
     yield put(getOptionsFail(error.response));

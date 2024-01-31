@@ -2,9 +2,8 @@ import axios from "axios";
 
 //apply base url for axios
 const REACT_APP_APP_URL = process.env.REACT_APP_APP_URL;
-console.log("REACT_APP_APP_URL: ", REACT_APP_APP_URL);
 const axiosApi = axios.create({
-  baseURL: `http://13.201.35.252:8000`,
+  baseURL: REACT_APP_APP_URL,
 });
 
 axios.interceptors.request.use(function (config) {
@@ -17,6 +16,7 @@ axiosApi.interceptors.response.use(
 );
 
 export async function get(url, config) {
+  console.log(config);
   return await axiosApi
     .get(url, {
       ...config,
