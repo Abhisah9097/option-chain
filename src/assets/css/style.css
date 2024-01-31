@@ -1,14 +1,21 @@
 /* F1EED9 */
 
 .table-small-view {
-    font-size: 10px !important;
+    font-size: 11px !important;
     text-align: center !important;
     padding: 1px !important;
 }
 
+.fs-10{
+    font-size: 11px!important;
+}
+
+.fw-600{
+    font-weight: 600!important;
+}
+
 .strike-price {
     font-weight: 700 !important;
-    color: #6984AD;
 }
 
 .table-in-the-price {
@@ -16,18 +23,22 @@
 }
 
 .first-of-largest-value {
-    background-color: #ff4c4c !important;
-    color: white !important;
+    background-color: #f88796 !important;
+    color: rgb(71, 69, 69) !important;
+    font-weight: 600 !important;
 }
 .second-of-largest-value {
-    background-color: #ffa340 !important;
-    color: white !important;
+    background-color: #ffd27f !important;
+    color: rgb(71, 69, 69) !important;
+    font-weight: 600 !important;
 }
 .third-of-largest-value {
-    background-color: #83aaf0 !important;
-    color: white !important;
+    background-color: #bce5af !important;
+    color: rgb(71, 69, 69) !important;
+    font-weight: 600 !important;
 }
 .fourth-of-largest-value {
-    background-color: #a7c44c !important;
-    color: white !important;
+    background-color: #a4c0d6 !important;
+    color: rgb(71, 69, 69) !important;
+    font-weight: 600 !important;
 }

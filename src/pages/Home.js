@@ -23,7 +23,7 @@ export default function Home() {
   const { records: { expiryDates, underlyingValue, strikePrices, timestamp, data } } = options || {};
   const [selectedExpiryDate, setSelectedExpiryDate] = useState(null);
   const [selectedStrikePrice, setSelectedStrikePrice] = useState(null);
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState(optionIndexs[2]);
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(optionIndexs[0]);
 
   const expiryDateOptions = useMemo(() => {
     if (!expiryDates) {
@@ -66,8 +66,6 @@ export default function Home() {
 
   }, [selectedExpiryDate, selectedStrikePrice]);
 
-  console.log("LARGEST_OPEN_INTERES:", largestOpenInteres);
-
   const config = {}
 
   useEffect(() => {
@@ -76,12 +74,17 @@ export default function Home() {
 
     const intervalId = setInterval(() => {
       dispatch(getOptions(config));
-    }, 30000);
+    }, 60000);
 
     return () => {
       clearInterval(intervalId);
     };
   }, [selectedOptionIndex]);
+
+  const onChangeOptionIndex = (optionIndex) => {
+    setSelectedExpiryDate(null);
+    setSelectedOptionIndex(optionIndex);
+  }
 
   return (
     <React.Fragment>
@@ -91,7 +94,7 @@ export default function Home() {
         updateExpiryDate={setSelectedExpiryDate}
         optionIndexs={optionIndexs}
         optionIndex={selectedOptionIndex}
-        updateOptionIndex={setSelectedOptionIndex}
+        updateOptionIndex={onChangeOptionIndex}
       />
       <Container className="home">
         <div className="my-3">
